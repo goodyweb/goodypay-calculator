@@ -4,7 +4,7 @@ class GoodyPayCalculator
 {
 
 
-    public function compute($amount, $paymentMethod, $flatfee){
+    public function compute($paymentMethod, $amount, $flatfee){
         if($paymentMethod == 'gcash'){
             $totalNetAmount = $this->computeGcash($amount);
             return $totalNetAmount;
