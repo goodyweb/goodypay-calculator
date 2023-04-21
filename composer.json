@@ -1,0 +1,21 @@
+{
+  "name": "bonsaimaster123/paymongocalculator",
+  "description": "Generate calculation base on paymongo",
+  "type": "library",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robin Ortizuela",
+      "email": "robinortizuela456@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PaymongoCalculator\\": "src/PaymongoCalculator/"
+    }
+},
+  "minimum-stability": "dev"
+}
