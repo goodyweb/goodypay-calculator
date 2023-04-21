@@ -2,8 +2,6 @@
 
 class GoodyPayCalculator
 {
-
-
     public function compute($paymentMethod, $amount, $flatfee){
         if($paymentMethod == 'gcash'){
             $totalNetAmount = $this->computeGcash($amount);
@@ -23,7 +21,6 @@ class GoodyPayCalculator
         }
         
     }
-
     //e-wallet compute 
     public function computeGcash($amount)
     {
@@ -55,9 +52,7 @@ class GoodyPayCalculator
             return false;
         }
     }
-
     //Card
-
     public function computeCard($amount, $flatfee)
     {
         if ($amount >= 100 && $flatfee != null) {
@@ -70,7 +65,8 @@ class GoodyPayCalculator
             return false;
         }
     }
-
+    
+    //Online Banking
     public function computeOnlineBanking($amount)
     {
         if ($amount >= 100) {
