@@ -14,10 +14,11 @@ Run
 composer require goodyweb/paymongocalculator
 ```
 
-or add
+Requirements
+------------
 
 ```
-"{package}": "*"
+Laravel version 9
 ```
 
 to the require section of your `composer.json` file.
