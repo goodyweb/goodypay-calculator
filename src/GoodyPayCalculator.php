@@ -13,14 +13,16 @@ class GoodyPayCalculator
             $totalNetAmount = $this->computePaymaya($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'card'){
-            $totalNetAmount = $this->computeCard($amount);
+            $totalNetAmount = $this->computeCard($amount, $flatfee);
             return $totalNetAmount;
         }elseif($paymentMethod == 'onlinebanking'){
             $totalNetAmount = $this->computeOnlineBanking($amount);
             return $totalNetAmount;
-        }
+        }else
+            return false;
         
     }
+   
     //e-wallet compute 
     public function computeGcash($amount)
     {
@@ -65,13 +67,13 @@ class GoodyPayCalculator
             return false;
         }
     }
-    
+
     //Online Banking
     public function computeOnlineBanking($amount)
     {
         if ($amount >= 100) {
             $feeValue = $amount * 3.5 / 100 + 15;
-            if($feeValue <=15){
+            if($feeValue <= 15){
                 $fee = 15;
             }else{
                 $fee = $feeValue;
