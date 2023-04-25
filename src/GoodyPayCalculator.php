@@ -1,7 +1,8 @@
 <?php
 
-class GoodyPayCalculator
+class GoodyPayCalculator 
 {
+
     public function compute($paymentMethod, $amount, $flatfee = null){
         if($paymentMethod == 'gcash'){
             $totalNetAmount = $this->computeGcash($amount);
@@ -30,7 +31,6 @@ class GoodyPayCalculator
             $fee = $amount * 2.5 / 100;
             return $amount - $fee;
         } else {
-           // $fee = $amount * $this->percentageFee / 100 + $this->flatFee;
             return false;
         }
     }
@@ -40,7 +40,6 @@ class GoodyPayCalculator
             $fee = $amount * 2.2 / 100;
             return $amount - $fee;
         } else {
-           // $fee = $amount * $this->percentageFee / 100 + $this->flatFee;
             return false;
         }
     }
@@ -50,17 +49,13 @@ class GoodyPayCalculator
             $fee = $amount * 2.0 / 100;
             return $amount - $fee;
         } else {
-           // $fee = $amount * $this->percentageFee / 100 + $this->flatFee;
             return false;
         }
     }
     //Card
-    public function computeCard($amount, $flatfee)
+    public function computeCard($amount, $percentage, $flatfee)
     {
-        if ($amount >= 100 && $flatfee != null) {
-            $fee = $amount * 3.5 / 100 + $flatfee;
-            return $amount - $fee;
-        }else if ($amount >= 100 && $flatfee == null) {
+        if ($amount >= 100 && $flatfee == null) {
             $fee = $amount * 3.5 / 100 + 15;
             return $amount - $fee;
         }else {
@@ -72,7 +67,7 @@ class GoodyPayCalculator
     public function computeOnlineBanking($amount)
     {
         if ($amount >= 100) {
-            $feeValue = $amount * 3.5 / 100 + 15;
+            $feeValue = $amount * 0.8 / 100 ;
             if($feeValue <= 15){
                 $fee = 15;
             }else{
