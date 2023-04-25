@@ -4,7 +4,7 @@ PayMongo pricing calculator for PHP
 Features
 ------------
 ```
-Calculate the pricing of Paymongo specifically for Card, E-Wallet and Online Banking
+Calculate the pricing of Paymongo specifically for **Card, E-Wallet and Online Banking**
 ```
 Installation
 ------------
@@ -19,10 +19,8 @@ Requirements
 
 ```
 Laravel version 9
+PHP version 5.3.0
+
 ```
 
-to the require section of your `composer.json` file.
 
-
-Usage
------
