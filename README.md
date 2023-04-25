@@ -5,6 +5,7 @@ Features
 ------------
 ```
 Calculate the pricing of Paymongo specifically for **Card, E-Wallet and Online Banking**
+**Card, E-Wallet and Online Banking**
 ```
 Installation
 ------------
