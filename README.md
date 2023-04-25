@@ -3,14 +3,12 @@ PayMongo pricing calculator for PHP
 
 Features
 ------------
-
-
+```
+Calculate the pricing of Paymongo specifically for Card, E-Wallet and Online Banking
+```
 Installation
 ------------
-
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
-
-Either run
+Run
 
 ```
 composer require goodyweb/paymongocalculator
