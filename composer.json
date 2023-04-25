@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "PaymongoCalculator\\": "src/PaymongoCalculator/"
+      "GoodyPayCalculator\\": "src/GoodyPayCalculator/"
     }
 },
   "minimum-stability": "dev"
