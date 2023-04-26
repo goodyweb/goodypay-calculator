@@ -11,18 +11,20 @@
   "authors": [
     {
       "name": "Robin Ortizuela",
-      "email": "robinortizuela456@gmail.com",
+      "email": "robinortizuela456@gmail.com"
+    },
+    {
       "name": "Reymark Jan Gandalla",
       "email": "reymarkjan01@gmail.com"
     }
   ],
   "require": {
     "php": ">=5.3.0"
-  }
+  },
   "autoload": {
       "psr-4": {
         "GoodyPayCalculator\\": "src/GoodyPayCalculator/"
       }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "dev"
 }
