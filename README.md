@@ -12,6 +12,8 @@ Run
 
 ```
 composer require goodypay/goodypay-calculator
+
+composer install
 ```
 
 Requirements
