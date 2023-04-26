@@ -24,5 +24,9 @@ Laravel version 9
 PHP version 5.3.0
 
 ```
+how to use the package**
+
+```
+
 
 
