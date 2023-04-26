@@ -3,21 +3,21 @@
 class GoodyPayCalculator 
 {
 
-    public function compute($paymentMethod, $amount, $flatfee = null){
+    public static function compute($paymentMethod, $amount, $foreign = null){
         if($paymentMethod == 'gcash'){
-            $totalNetAmount = $this->computeGcash($amount);
+            $totalNetAmount = GoodyPayCalculator::computeGcash($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'grabpay'){
-            $totalNetAmount = $this->computeGrabPay($amount);
+            $totalNetAmount = GoodyPayCalculator::computeGrabPay($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'paymaya'){
-            $totalNetAmount = $this->computePaymaya($amount);
+            $totalNetAmount = GoodyPayCalculator::computePaymaya($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'card'){
-            $totalNetAmount = $this->computeCard($amount, $flatfee);
+            $totalNetAmount = GoodyPayCalculator::computeCard($amount, $foreign);
             return $totalNetAmount;
         }elseif($paymentMethod == 'onlinebanking'){
-            $totalNetAmount = $this->computeOnlineBanking($amount);
+            $totalNetAmount = GoodyPayCalculator::computeOnlineBanking($amount);
             return $totalNetAmount;
         }else
             return false;
@@ -25,7 +25,7 @@ class GoodyPayCalculator
     }
    
     //e-wallet compute 
-    public function computeGcash($amount)
+    public static function computeGcash($amount)
     {
         if ($amount >= 100) {
             $fee = $amount * 2.5 / 100;
@@ -34,7 +34,7 @@ class GoodyPayCalculator
             return false;
         }
     }
-    public function computeGrabPay($amount)
+    public static function computeGrabPay($amount)
     {
         if ($amount >= 100) {
             $fee = $amount * 2.2 / 100;
@@ -43,7 +43,7 @@ class GoodyPayCalculator
             return false;
         }
     }
-    public function computePaymaya($amount)
+    public static function computePaymaya($amount)
     {
         if ($amount >= 100) {
             $fee = $amount * 2.0 / 100;
@@ -53,18 +53,22 @@ class GoodyPayCalculator
         }
     }
     //Card
-    public function computeCard($amount, $percentage, $flatfee)
+    public static function computeCard($amount, $foreign = null)
     {
-        if ($amount >= 100 && $flatfee == null) {
+        if ($amount >= 100 && $foreign == false) {
             $fee = $amount * 3.5 / 100 + 15;
             return $amount - $fee;
-        }else {
+        }else if($amount >= 100 && $foreign == true) {
+            $fee = $amount * 4.5 / 100 + 15;
+            return $amount - $fee;
+        }else{
             return false;
         }
     }
+    
 
     //Online Banking
-    public function computeOnlineBanking($amount)
+    public static function computeOnlineBanking($amount)
     {
         if ($amount >= 100) {
             $feeValue = $amount * 0.8 / 100 ;
