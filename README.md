@@ -57,6 +57,6 @@ PHP version 5.3.0
 
 - Gandalla, Reymark Jan (s.gandalla.reymarkjan@cmu.edu.ph)
 - Ortizuela, Robin (s.ortizuela.robin@cmu.edu.ph)
-- Salvame, Grace Ann (s.salvame.graceann@cmu.edu.ph)
+- Salvame, Grace Ann (salvamegraceann@cmu.edu.ph)
 - Tamala, James Lester (s.tamala.jameslester@cmu.edu.ph)
 
