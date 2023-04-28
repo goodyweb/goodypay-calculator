@@ -33,9 +33,11 @@ PHP version 5.3.0
 
 ```
 
-## Requirements<a name="Guide"></a>
+## Guide<a name="Guide"></a>
+------------
 
 ### Using GoodyPayCalculator Class<a name="Class"></a>
+------------
 - GoodyPay Calculator::Compute('paymentMethod', $amount, true)
 - Accept payment method such as "Gcash", "Paymaya", "Grabpay", Card", "Online banking"
 - Compute ("Gcash", 3000, true)
@@ -44,6 +46,7 @@ PHP version 5.3.0
     - True (Foreign, specific for online banking)
 
 ### For direct use using the static method<a name="Method"></a>
+------------
 
 - GoodyPayCalculator::ComputeGcash ($amount)
 - GoodyPayCalculator::ComputeCard ($amount, $foreign)
