@@ -38,19 +38,19 @@ PHP version 5.3.0
 
 **1. Using GoodyPayCalculator Class**<a name="Class"></a>
 
-- GoodyPay Calculator::Compute('paymentMethod', $amount, true)
-- Accept payment method such as "Gcash", "Paymaya", "Grabpay", Card", "Online banking"
-- Compute ("Gcash", 3000, true)
-    - Gcash (Payment Method)
-    - 3000 (Amount)
-    - True (Foreign, specific for online banking)
+- <code>GoodyPayCalculator::Compute('paymentMethod', $amount, true)</code>
+- Accept payment method such as <code>"Gcash"</code>, <code>"Paymaya"</code>, <code>"Grabpay"</code>, <code>"Card"</code>, <code>"Online banking"</code>
+- Compute <code>("Gcash", 3000, true)</code>
+    - *<code>Gcash</code> (Payment Method)*
+    - *<code>3000</code> (Amount)*
+    - *<code>True</code> (Foreign, specific for online banking)*
 
 **2. For direct use using the static method**<a name="Method"></a>
 
-- GoodyPayCalculator::ComputeGcash ($amount)
-- GoodyPayCalculator::ComputeCard ($amount, $foreign)
-- GoodyPayCalculator::ComputeOnlineBanking ($amount)
-- GoodyPayCalculator::ComputeGrabPay ($amount)
-- GoodyPayCalculator::ComputePaymaya ($amount)
+- <code>GoodyPayCalculator::ComputeGcash ($amount)</code>
+- <code>GoodyPayCalculator::ComputeCard ($amount, $foreign)</code>
+- <code>GoodyPayCalculator::ComputeOnlineBanking ($amount)</code>
+- <code>GoodyPayCalculator::ComputeGrabPay ($amount)</code>
+- <code>GoodyPayCalculator::ComputePaymaya ($amount)</code>
 
 
