@@ -11,7 +11,7 @@ class GoodyPayCalculator
             $totalNetAmount = GoodyPayCalculator::computeGrabPay($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'paymaya'){
-            $totalNetAmount = GoodyPayCalculator::computePaymaya($amount);
+            $totalNetAmount = GoodyPayCalculator::computeMaya($amount);
             return $totalNetAmount;
         }elseif($paymentMethod == 'card'){
             $totalNetAmount = GoodyPayCalculator::computeCard($amount, $foreign);
@@ -43,7 +43,7 @@ class GoodyPayCalculator
             return false;
         }
     }
-    public static function computePaymaya($amount)
+    public static function computeMaya($amount)
     {
         if ($amount >= 100) {
             $fee = $amount * 2.0 / 100;
