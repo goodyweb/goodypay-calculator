@@ -4,19 +4,19 @@ class GoodyPayCalculator
 {
 
     public static function compute($paymentMethod, $amount, $foreign = null){
-        if($paymentMethod == 'gcash'){
+        if(strtolower($paymentMethod) == 'gcash'){
             $totalNetAmount = GoodyPayCalculator::computeGcash($amount);
             return $totalNetAmount;
-        }elseif($paymentMethod == 'grabpay'){
+        }elseif(strtolower($paymentMethod) == 'grabpay'){
             $totalNetAmount = GoodyPayCalculator::computeGrabPay($amount);
             return $totalNetAmount;
-        }elseif($paymentMethod == 'paymaya'){
+        }elseif(strtolower($paymentMethod) == 'paymaya'){
             $totalNetAmount = GoodyPayCalculator::computeMaya($amount);
             return $totalNetAmount;
-        }elseif($paymentMethod == 'card'){
+        }elseif(strtolower($paymentMethod) == 'card'){
             $totalNetAmount = GoodyPayCalculator::computeCard($amount, $foreign);
             return $totalNetAmount;
-        }elseif($paymentMethod == 'onlinebanking'){
+        }elseif(strtolower($paymentMethod) == 'onlinebanking'){
             $totalNetAmount = GoodyPayCalculator::computeOnlineBanking($amount);
             return $totalNetAmount;
         }else
