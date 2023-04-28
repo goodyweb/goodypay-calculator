@@ -29,7 +29,6 @@ composer install
 
 ```
 PHP version 5.3.0
-
 ```
 
 ## Guide<a name="Guide"></a>
@@ -55,8 +54,8 @@ PHP version 5.3.0
 
 ## Contributors<a name="Contributors"></a>
 
-- Gandalla, Reymark Jan
-- Ortizuela, Robin
-- Salvame, Grace Ann
-- Tamala, James Lester 
+- Gandalla, Reymark Jan (s.gandalla.reymarkjan@cmu.edu.ph)
+- Ortizuela, Robin (s.ortizuela.robin@cmu.edu.ph)
+- Salvame, Grace Ann (salvamegraceann@gmail.com)
+- Tamala, James Lester (s.tamala.jameslester@cmu.edu.ph)
 
