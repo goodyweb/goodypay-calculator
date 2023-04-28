@@ -58,5 +58,5 @@ PHP version 5.3.0
 - Gandalla, Reymark Jan
 - Ortizuela, Robin
 - Salvame, Grace Ann
-- Tamala, James Lester
+- Tamala, James Lester 
 
