@@ -32,6 +32,9 @@ Laravel version 9
 PHP version 5.3.0
 
 ```
+
+## Guide <a name="Guide"></a>
+
 ### Using GoodyPayCalculator Class<a name="Class"></a>
 - GoodyPay Calculator::Compute('paymentMethod', $amount, true)
 - Accept payment method such as "Gcash", "Paymaya", "Grabpay", Card", "Online banking"
