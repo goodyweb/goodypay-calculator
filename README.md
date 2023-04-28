@@ -29,7 +29,6 @@ composer install
 
 ```
 PHP version 5.3.0
-
 ```
 
 ## Guide<a name="Guide"></a>
