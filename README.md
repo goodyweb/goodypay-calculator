@@ -1,5 +1,4 @@
 # PayMongo pricing calculator for PHP
-=============
 
 ## Features
 ------------
