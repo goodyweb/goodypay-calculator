@@ -45,7 +45,7 @@ PHP version 5.3.0
     - 3000 (Amount)
     - True (Foreign, specific for online banking)
 
-### For direct use using the static method<a name="Method"></a>
+**1. For direct use using the static method**<a name="Method"></a>
 
 - GoodyPayCalculator::ComputeGcash ($amount)
 - GoodyPayCalculator::ComputeCard ($amount, $foreign)
