@@ -1,13 +1,12 @@
-# Table of Contents
+# PayMongo pricing calculator for PHP
+
+## Table of Contents
 1. [Features](#Features)
 2. [Installation](#Installation)
 3. [Requirements](#Requirements)
 4. [Guide](#Guide)
     1. [Using GoodyPayCalculator Class](#Class)
     2. [For direct use using the static method](#Method)
-
-
-# PayMongo pricing calculator for PHP
 
 ## Features<a name="Features"></a>
 
